@@ -1,0 +1,9 @@
+{
+  "name": "hello-electron",
+  "version": "0.1.0",
+  "description": "Hello-electron",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/ringohub/hello-electron.git",
+  "author": "Yoshiki Aoki <yoshiki_aoki@dwango.co.jp>",
+  "license": "MIT"
+}
