@@ -1,0 +1,70 @@
+* {
+  transition: all 0.3s;
+}
+
+body {
+  font-family: 'Hiragino Sans';
+  font-weight: 100;
+  margin: 0;
+}
+
+main {
+  margin:10px;
+}
+
+h1 {
+  font-weigth: 100;
+  margin: 0;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.timeline > li {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  padding-left: 10px;
+}
+
+.timeline-content {
+  width: 75%;
+  float: left;
+  border-left: 1px #e5e5d1 solid;
+  padding-left: 17px;
+}
+
+.timeline-content:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#theme-light:before {
+  background-color: white;
+  border-color: #282A36;
+}
+
+#theme-dark:before {
+  background-color: #282A36;
+  border-color: white;
+}
+
+#theme-frost:before {
+  background-color: rgba(200,200,200, 0.9);
+  border-color: #282A36;
+
+}
+
+#drag-space {
+  -webkit-app-region: drag;
+  height: 20px;
+  width: 100%;
+}
