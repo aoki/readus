@@ -7,10 +7,20 @@
   "author": "Yoshiki Aoki <yoshiki_aoki@dwango.co.jp>",
   "license": "MIT",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "lint": "xo"
   },
   "dependencies": {},
   "devDependencies": {
-    "electron": "1.4.13"
-  }
+    "electron": "1.4.13",
+    "xo": "0.17.1"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  },
+  "peerDependencies": {}
 }
