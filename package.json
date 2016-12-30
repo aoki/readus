@@ -8,14 +8,17 @@
   "license": "MIT",
   "scripts": {
     "start": "electron main.js",
+    "test": "nyc ava",
     "lint": "xo",
-    "lint:fix": "xo"
+    "lint:fix": "xo --fix"
   },
   "dependencies": {},
   "devDependencies": {
+    "ava": "0.17.0",
     "electron": "1.4.13",
     "eslint-config-xo": "0.17.0",
     "eslint-config-xo-space": "0.15.0",
+    "nyc": "10.0.0",
     "xo": "0.17.1"
   },
   "xo": {
