@@ -8,11 +8,14 @@
   "license": "MIT",
   "scripts": {
     "start": "electron main.js",
-    "lint": "xo"
+    "lint": "xo",
+    "lint:fix": "xo"
   },
   "dependencies": {},
   "devDependencies": {
     "electron": "1.4.13",
+    "eslint-config-xo": "0.17.0",
+    "eslint-config-xo-space": "0.15.0",
     "xo": "0.17.1"
   },
   "xo": {
@@ -20,6 +23,11 @@
     "envs": [
       "node",
       "browser"
+    ],
+    "extends": [
+      "xo",
+      "xo/esnext",
+      "xo-space"
     ]
   },
   "peerDependencies": {}
